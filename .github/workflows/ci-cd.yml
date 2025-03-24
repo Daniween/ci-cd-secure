@@ -19,15 +19,11 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Clean npm cache
-        run: npm cache clean --force
-
-      - name: Delete node_modules and package-lock.json
-        run: |
-          rm -rf node_modules package-lock.json
-
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install -g npm-force-resolutions
+          npm-force-resolutions
+          npm install
 
       - name: Build Docker image
         run: docker build -t devsecure-api .

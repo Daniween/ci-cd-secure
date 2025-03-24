@@ -1,6 +1,6 @@
 # DevSecure API
 
-Une petite API Node.js avec un pipeline CI/CD sécurisé.
+Une petite API Python avec un pipeline CI/CD sécurisé.
 
 ## 🔧 Fonctionnalités :
 

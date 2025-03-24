@@ -33,3 +33,40 @@ cd ci-cd-secure
 docker build -t devsecure-api .
 docker run -p 3000:3000 devsecure-api
 ```
+
+## 🧪 Tester l'API (Exemple Flask)
+
+```bash
+curl http://localhost:3000/
+```
+
+## 🔐 Sécurité & Scans
+
+| Outil    | Objectif                                            |
+| -------- | --------------------------------------------------- |
+| Trivy    | Scan des vulnérabilités dans l'image Docker         |
+| public/  | Fichiers statiques publics                          |
+| Snyk     | Analyse des dépendances Python et du container      |
+| GitLeaks | Détection de secrets (clés, tokens...) dans le code |
+
+## 📦 Déploiement Docker Hub
+
+- Une fois la branche dev poussée :
+- L’image est construite automatiquement
+- Elle est scannée avec Trivy & Snyk
+- Puis poussée en latest sur Docker Hub :
+
+```bash
+docker pull <ton_user>/devsecure-api:latest
+```
+
+## 📁 Structure du projet
+
+.
+├── app.py # Application Flask principale
+├── Dockerfile # Configuration de l’image
+├── requirements.txt # Dépendances Python
+├── .github/
+│ └── workflows/
+│ └── ci.yml # Pipeline CI/CD GitHub Actions
+└── README.md # Documentation

@@ -16,7 +16,9 @@
     "url": "https://github.com/Daniween/ci-cd-secure/issues"
   },
   "dependencies": {
-    "express": "^4.21.2",
+    "express": "^4.21.2"
+  },
+  "resolutions": {
     "cross-spawn": "^7.0.5"
   }
 }

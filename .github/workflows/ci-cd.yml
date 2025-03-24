@@ -31,7 +31,7 @@ jobs:
           image-ref: "devsecure-api"
           format: "table"
           exit-code: "1"
-          severity: "CRITICAL"
+          severity: "CRITICAL,HIGH"
 
       - name: Install Snyk CLI
         run: npm install -g snyk

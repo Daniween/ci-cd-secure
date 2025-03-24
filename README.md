@@ -45,7 +45,6 @@ curl http://localhost:3000/
 | Outil    | Objectif                                            |
 | -------- | --------------------------------------------------- |
 | Trivy    | Scan des vulnérabilités dans l'image Docker         |
-| public/  | Fichiers statiques publics                          |
 | Snyk     | Analyse des dépendances Python et du container      |
 | GitLeaks | Détection de secrets (clés, tokens...) dans le code |
 
@@ -70,3 +69,9 @@ docker pull <ton_user>/devsecure-api:latest
 │ └── workflows/
 │ └── ci.yml # Pipeline CI/CD GitHub Actions
 └── README.md # Documentation
+
+### 🗺️ Architecture CI/CD
+
+<p align="center">
+  <img src=".github/assets/architecture.svg" alt="Architecture Diagram" width="800"/>
+</p>

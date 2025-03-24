@@ -28,7 +28,7 @@
 
   <!-- Snyk + Trivy -->
   <rect x="365" y="200" width="170" height="50" class="box"/>
-  <text x="450" y="230" text-anchor="middle" class="title">Snyk & Trivy Scan</text>
+  <text x="450" y="230" text-anchor="middle" class="title">Snyk and Trivy Scan</text>
   <line x1="450" y1="160" x2="450" y2="200" class="arrow"/>
 
   <!-- Gitleaks -->

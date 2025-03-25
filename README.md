@@ -2,7 +2,7 @@
 
 Une petite API Python (Flask) conçue avec une approche **DevSecOps** : sécurisée dès le développement, containerisée et livrée via une pipeline CI/CD automatisée.
 
-![CI/CD](https://github.com/Daniween/ci-cd-secure/actions/workflows/ci.yml/python.svg)
+![CI/CD](https://raw.githubusercontent.com/Daniween/ci-cd-secure/main/.github/assets/python.svg)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
 ![Security](https://img.shields.io/badge/Security-Scanned-brightgreen)
 

@@ -42,7 +42,7 @@ curl http://localhost:3000/
 
 ## 🔐 Sécurité & Scans
 
-| Outil    | Objectif                                            |
+| Outil    | Objectifs                                           |
 | -------- | --------------------------------------------------- |
 | Trivy    | Scan des vulnérabilités dans l'image Docker         |
 | Snyk     | Analyse des dépendances Python et du container      |

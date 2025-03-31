@@ -69,7 +69,7 @@ jobs:
           path: snyk-report.html
 
       - name: Scan for secrets with Gitleaks
-        uses: zricethezav/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 

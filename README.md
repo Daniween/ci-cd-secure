@@ -61,7 +61,7 @@ docker pull <ton_user>/devsecure-api:latest
 
 ## 📁 Structure du projet
 
-.
+```
 ├── app.py # Application Flask principale
 ├── Dockerfile # Configuration de l’image
 ├── requirements.txt # Dépendances Python
@@ -69,6 +69,7 @@ docker pull <ton_user>/devsecure-api:latest
 │ └── workflows/
 │ └── ci.yml # Pipeline CI/CD GitHub Actions
 └── README.md # Documentation
+```
 
 ### 🗺️ Architecture CI/CD
 

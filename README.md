@@ -5,6 +5,7 @@ Une petite API Python (Flask) conçue avec une approche **DevSecOps** : sécuris
 ![CI/CD](https://github.com/Daniween/ci-cd-secure/actions/workflows/ci-cd.yml/badge.svg)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
 ![Security](https://img.shields.io/badge/Security-Scanned-brightgreen)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a15f20cbdf2743618efe54e2db39f605)](https://app.codacy.com/gh/daniween/ci-cd-secure/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ---
 

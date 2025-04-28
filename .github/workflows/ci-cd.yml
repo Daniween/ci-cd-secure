@@ -37,9 +37,6 @@ jobs:
           exit-code: "1"
           severity: "CRITICAL"
 
-      - name: Install Snyk CLI
-        run: npm install -g snyk
-
       - name: Run Snyk Scan
         uses: snyk/actions/docker@master
         continue-on-error: true

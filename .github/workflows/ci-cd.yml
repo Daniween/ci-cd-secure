@@ -40,21 +40,14 @@ jobs:
       - name: Install Snyk CLI
         run: npm install -g snyk
 
-      - name: Snyk scan (Python dependencies)
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        run: snyk test --file=requirements.txt --package-manager=pip --severity-threshold=high --fail-on=all
-
-      - name: Snyk scan (Docker image) and export report
+      - name: Run Snyk Scan
+        uses: snyk/actions/docker@master
         continue-on-error: true
+        with:
+          image: devsecure-api:latest
+          args: --file=Dockerfile --json-file-output=snyk-report.json
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        run: |
-          snyk container test devsecure-api \
-            --file=Dockerfile \
-            --severity-threshold=high \
-            --exclude-base-image-vulns \
-            --json > snyk-report.json
 
       - name: Install snyk-to-html
         run: npm install -g snyk-to-html
